@@ -1,39 +1,94 @@
 <html>
 <head>
+<meta charset="ISO-8859-1">
+<title>Three Daily Things</title>
+<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-52770471-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+<script src="lib/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="lib/underscore/underscore-min.js" type="text/javascript"></script>
+<script src="lib/moment/moment.js" type="text/javascript"></script>
+<script src="lib/website/threedailytasks.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css"
+	href="lib/bootstrap/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css'>
+<link href='lib/website/style.css' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" type="image/png"
+	href="lib/website/favicon.png" />
 </head>
 <body>
-<p>
-The reason why I wrote this app is best explained with a story about myself.
-</p>
-<p>
-Like most people, I want to be fit an healthy. To achieve this, I sign up to my local gym. But it doesn't take long for the unknowns to start rattling around in my brain. How many reps and set should I do? Should I do cardio before or after resistance training? Should I be taking supplements? Is it best to work out in the morning or afternoon? Which exercises are best?
-</p>
-<p>
-All these unknowns start to weigh heavily in my mind. I begin to wonder if I am wasting my time. I skip a few sessions, and before I know it I haven't visited the gym in weeks.
-</p>
-<p>
-So many beneficial aspirations in my life have followed this path. I like the idea, I try it out, I get overwhelmed by the unknowns and eventually I give up.
-</p>
-<p>
-So I asked myself, what was it that I really wanted out of my gym membership? The answer is right there in the first sentence: to be fit and healthy. And I realize that I can achieve this goal without actually knowing the best ratio of sets to reps, the most effective exercises and without taking supplements. All I need to do is walk through the gym door. Simply being in the gym day after day and doing some sort of exercise achieves my goal of being fit and healthy.
-</p>
-<p>
-In a nutshell, my problem is that in seeking perfection I often end up with nothing. The solution was to convince myself that continuing focus on these beneficial activities, even if I do them imperfectly, will eventually get me the result I am looking for.
-</p>
-<p>
-That is why I created Three Daily Things. It is a way to remind myself that any time I spent working on the three things that I feel would most improve my life is worthwhile.
-</p>
-<p>
-The app is deliberately simple. You list the three things that you feel would most improve your life, and when you spend any amount of time working on them, you give yourself a tick. The report allows you to quickly gauge how often to make time (any time) for these three tasks over the last week.
-</p>
-<p>
-For such a simple idea, my personal results were quite incredible. Prior to writing this app, I would estimate that I would have spent time on my three most important things maybe six or seven times a week, giving me a weekly score of around 30%. Using the app daily, my weekly score usually sits between 60% and 80%. That means I have easily doubled my focus on those three things that I know are improving my life.
-</p>
-<p>
-This started out as a personal motivational tool, but it has worked so well that I decided to make the web site free to everyone in the hopes that others would find Three Daily Things as simple and effective as I have.
-</p>
-<p>
-Matthew Casperson
-</p>
+	<div class="container">
+		<div class="row hidden-xs">
+			<h1 class="text-center">
+				<img src="lib/website/favicon.png" height="48" width="48" /> Three
+				Daily Things
+			</h1>
+			<h6 class="text-center">(that will make your life better)</h6>
+		</div>
+		<p>The reason why I wrote this app is best explained with a story
+			about myself.</p>
+		<p>Like most people, I want to be fit an healthy. To achieve this,
+			I sign up to my local gym. But it doesn't take long for the unknowns
+			to start rattling around in my brain. How many reps and set should I
+			do? Should I do cardio before or after resistance training? Should I
+			be taking supplements? Is it best to work out in the morning or
+			afternoon? Which exercises are best?</p>
+		<p>All these unknowns start to weigh heavily in my mind. I begin
+			to wonder if I am wasting my time. I skip a few sessions, and before
+			I know it I haven't visited the gym in weeks.</p>
+		<p>So many beneficial aspirations in my life have followed this
+			path. I like the idea, I try it out, I get overwhelmed by the
+			unknowns and eventually I give up.</p>
+		<p>So I asked myself, what was it that I really wanted out of my
+			gym membership? The answer is right there in the first sentence: to
+			be fit and healthy. And I realize that I can achieve this goal
+			without actually knowing the best ratio of sets to reps, the most
+			effective exercises and without taking supplements. All I need to do
+			is walk through the gym door. Simply being in the gym day after day
+			and doing some sort of exercise achieves my goal of being fit and
+			healthy.</p>
+		<p>In a nutshell, my problem is that in seeking perfection I often
+			end up with nothing. The solution was to convince myself that
+			continuing focus on these beneficial activities, even if I do them
+			imperfectly, will eventually get me the result I am looking for.</p>
+		<p>That is why I created Three Daily Things. It is a way to remind
+			myself that any time I spent working on the three things that I feel
+			would most improve my life is worthwhile.</p>
+		<p>The app is deliberately simple. You list the three things that
+			you feel would most improve your life, and when you spend any amount
+			of time working on them, you give yourself a tick. The report allows
+			you to quickly gauge how often to make time (any time) for these
+			three tasks over the last week.</p>
+		<p>For such a simple idea, my personal results were quite
+			incredible. Prior to writing this app, I would estimate that I would
+			have spent time on my three most important things maybe six or seven
+			times a week, giving me a weekly score of around 30%. Using the app
+			daily, my weekly score usually sits between 60% and 80%. That means I
+			have easily doubled my focus on those three things that I know are
+			improving my life.</p>
+		<p>This started out as a personal motivational tool, but it has
+			worked so well that I decided to make the web site free to everyone
+			in the hopes that others would find Three Daily Things as simple and
+			effective as I have.</p>
+		<p>Matthew Casperson</p>
+			<div class="row voffset3 text-center">
+				<small class="bottom-links">
+				<a href="http://threedailythings.com/" class="bottom-links">Home</a> |
+				<a href="why.html" class="bottom-links">Why</a> | 
+				<a href="https://github.com/mcasperson/ThreeDailyTasks/tree/gh-pages" class="bottom-links">Source</a> |
+				<a href="https://plus.google.com/b/111263989371586575576/111263989371586575576/about" class="bottom-links">Community</a> |
+				<a href="mailto:matthewcasperson@gmail.com" class="bottom-links">Contact</a> 
+				</small> 
+			</div>
+	</div>
 </body>
 </html>
