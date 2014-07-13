@@ -30,6 +30,10 @@ body {
 	width: 100%;
 }
 
+.container {
+	max-width: 600px;
+}
+
 #task1done, #task2done, #task3done {
 	padding-left: 10px;
 }
