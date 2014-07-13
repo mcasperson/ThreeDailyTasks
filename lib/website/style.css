@@ -34,6 +34,10 @@ body {
 	max-width: 600px;
 }
 
+.bottom-links {
+	color: lightgrey;
+}
+
 #task1done, #task2done, #task3done {
 	padding-left: 10px;
 }
