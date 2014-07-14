@@ -5,9 +5,9 @@ api_version: 1
 
 handlers:
 - url: /(.+)
-  static_files: static_files/\1
-  upload: static_files/(.+)
+  static_files: www/\1
+  upload: www/(.+)
 
 - url: /
-  static_files: static_files/index.html
-  upload: static_files/index.html
+  static_files: www/index.html
+  upload: www/index.html
