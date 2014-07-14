@@ -52,3 +52,14 @@ body {
 .voffset7 { margin-top: 80px; }
 .voffset8 { margin-top: 100px; }
 .voffset9 { margin-top: 150px; }
+
+.vboffset  { margin-bottom: 2px; }
+.vboffset1 { margin-bottom: 5px; }
+.vboffset2 { margin-bottom: 10px; }
+.vboffset3 { margin-bottom: 15px; }
+.vboffset4 { margin-bottom: 30px; }
+.vboffset5 { margin-bottom: 40px; }
+.vboffset6 { margin-bottom: 60px; }
+.vboffset7 { margin-bottom: 80px; }
+.vboffset8 { margin-bottom: 100px; }
+.vboffset9 { margin-bottom: 150px; }
