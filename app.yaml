@@ -4,5 +4,10 @@ runtime: php
 api_version: 1
 
 handlers:
+- url: /(.+)
+  static_files: static_files/\1
+  upload: static_files/(.+)
+
 - url: /
-  static_dir: static_files
+  static_files: static_files/index.html
+  upload: static_files/index.html
