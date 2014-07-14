@@ -51,6 +51,12 @@ jQuery(showWelcomeMessage);
 jQuery(updateDisplay);
 jQuery(refreshDisplay(getToday()));
 
+function displayBottomLinks() {
+	if (!isPhoneGap()) {
+		jQuery("#bottomLinks").show();
+	}
+}
+
 function showWelcomeMessage() {
 	if (!hasDatabase()) {
 		jQuery("#welcomeMessage").show();
