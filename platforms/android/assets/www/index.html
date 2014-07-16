@@ -27,6 +27,7 @@
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Three Daily Things</title>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
 		<script>
 			/**
 			* Determine whether the file loaded from PhoneGap or not
@@ -48,6 +49,7 @@
 		  ga('send', 'pageview');
 		}
 		</script>
+		
 		<script src="lib/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="lib/underscore/underscore-min.js" type="text/javascript"></script>
@@ -57,6 +59,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='lib/website/style.css' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" type="image/png" href="lib/website/favicon.png"/>
+		
+		<script>
+			document.addEventListener("deviceready", hideBottomLinks, false);
+		</script>
 	</head>
 	<body>
 		<div class="container">
@@ -126,9 +132,7 @@
 				<a href="https://plus.google.com/b/111263989371586575576/111263989371586575576/about" class="bottom-links">Community</a> |
 				<a href="mailto:matthewcasperson@gmail.com" class="bottom-links">Contact</a> 
 				</small> 
-			</div>
-				
-			
-		</div>
+			</div>						
+		</div>			
 	</body>
 </html>

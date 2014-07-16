@@ -1,4 +1,4 @@
-C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\ant-gen\com\threelittlethings\R.java \
+C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\ant-gen\com\threedailythings\R.java \
  : C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\res\drawable\icon.png \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\res\drawable-hdpi\icon.png \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\res\drawable-land-hdpi\screen.png \
