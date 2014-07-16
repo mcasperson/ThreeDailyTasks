@@ -48,6 +48,7 @@ var REPORT_DAYS = 7;
 var MAX_TASK_LENGTH = 30;
 
 jQuery(showWelcomeMessage);
+jQuery(displayBottomLinks);
 jQuery(updateDisplay);
 jQuery(refreshDisplay(getToday()));
 
