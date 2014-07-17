@@ -100,11 +100,11 @@ function getToday() {
 }
 
 function setButtonAsNotCompleted(id) {
-	jQuery("#" + id + "done").css("display", "none");
+	jQuery("#" + id + "done").hide();
 }
 
 function setButtonAsCompleted(id) {
-	jQuery("#" + id + "done").css("display", "initial");
+	jQuery("#" + id + "done").show();
 }
 
 function getNegDone(database, taskNum) {
@@ -169,20 +169,19 @@ function toggleTask(taskNum) {
 	updateDisplay();
 }
 
-function updateButtonState() {
-	_.each(["task1", "task2", "task3"], function(element) {
-		setButtonAsNotCompleted(element);
-	});
-	
+function updateButtonState() {	
 	var database = getDatabase();
-	if (database[getToday()]) {
-		
+	if (database[getToday()]) {		
 		_.each(["task1", "task2", "task3"], function(element) {
 			if (database[getToday()][element]) {
 				setButtonAsCompleted(element);
-			}
-			
-			
+			} else {
+				setButtonAsNotCompleted(element);
+			}						
+		});
+	} else {
+		_.each(["task1", "task2", "task3"], function(element) {
+			setButtonAsNotCompleted(element);
 		});
 	}
 	
