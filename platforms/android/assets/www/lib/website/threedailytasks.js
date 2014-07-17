@@ -94,11 +94,12 @@ function linkEvents() {
 }
 
 function displayBottomLinks() {
-	if (!isPhoneGap()) {
+	if (!isPhoneGap() && !isChromeExtension()) {
 		jQuery("#bottomLinks").show();	
 		jQuery("#appLinks").show();
 	} else if (isChromeExtension()) {
 		jQuery("#chromeStoreLink").hide();
+		jQuery("#appLinks").show();
 	}
 }
 
