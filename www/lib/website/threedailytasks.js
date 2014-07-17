@@ -47,10 +47,37 @@ var TODAY_FORMAT = "DDMMYYYY";
 var REPORT_DAYS = 7;
 var MAX_TASK_LENGTH = 30;
 
+jQuery(linkEvents);
 jQuery(showWelcomeMessage);
 jQuery(displayBottomLinks);
 jQuery(updateDisplay);
 jQuery(refreshDisplay(getToday()));
+
+function linkEvents() {
+	jQuery("#task1").click(function(){toggleTask('task1');});
+	jQuery("#task2").click(function(){toggleTask('task2');});
+	jQuery("#task3").click(function(){toggleTask('task3');});
+	
+	jQuery("#task1edit").blur(function(){endEdit('task1');});
+	jQuery("#task2edit").blur(function(){endEdit('task2');});
+	jQuery("#task3edit").blur(function(){endEdit('task3');});
+	
+	jQuery("#task1edit").keypress(function(event){keypress(event, 'task1');});
+	jQuery("#task2edit").keypress(function(event){keypress(event, 'task2');});
+	jQuery("#task3edit").keypress(function(event){keypress(event, 'task3');});
+	
+		
+	jQuery("#task1editstartbutton").click(function(){startEdit('task1');});
+	jQuery("#task2editstartbutton").click(function(){startEdit('task2');});
+	jQuery("#task3editstartbutton").click(function(){startEdit('task3');});
+	
+	jQuery("#task1editendbutton").click(function(){endEdit('task1');});
+	jQuery("#task2editendbutton").click(function(){endEdit('task2');});
+	jQuery("#task3editendbutton").click(function(){endEdit('task3');});
+	
+	jQuery("#twitterShare").click(function(){shareTwitter();});
+	
+}
 
 function displayBottomLinks() {
 	if (!isPhoneGap()) {
