@@ -60,6 +60,7 @@ C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\l
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\underscore\underscore-min.js \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\underscore\underscore-min.map \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\favicon.png \
+C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\opensans.woff \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\playstore.png \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\style.css \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\threedailytasks.js \
