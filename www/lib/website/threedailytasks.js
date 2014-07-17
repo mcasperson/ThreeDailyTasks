@@ -75,8 +75,9 @@ function linkEvents() {
 	jQuery("#task2editendbutton").click(function(){endEdit('task2');});
 	jQuery("#task3editendbutton").click(function(){endEdit('task3');});
 	
-	jQuery("#twitterShare").click(function(){shareTwitter();});
+	jQuery("#twitterShare").click(function(){shareTwitter();});	
 	
+	jQuery("#playStoreLink").click(function() {window.open("https://play.google.com/store/apps/details?id=com.threedailythings");});
 }
 
 function displayBottomLinks() {
