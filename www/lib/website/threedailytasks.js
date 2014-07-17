@@ -89,14 +89,15 @@ function linkEvents() {
 	jQuery("#twitterShare").click(function(){shareTwitter();});	
 	
 	jQuery("#playStoreLink").click(function() {window.open("https://play.google.com/store/apps/details?id=com.threedailythings");});
+	jQuery("#chromeStoreLink").click(function() {window.open("https://chrome.google.com/webstore/detail/three-daily-things/jecgjccbadfkhgggbhconpgmoanhgend");
 }
 
 function displayBottomLinks() {
-	if (!isPhoneGap()) {
-		if (!isChromeExtension()) {
-			jQuery("#bottomLinks").show();
-		}
+	if (!isPhoneGap() && !isChromeExtension()) {
+		jQuery("#bottomLinks").show();	
 		jQuery("#appLinks").show();
+	} else {
+		jQuery("#chromeStoreLink").hide();
 	}
 }
 

@@ -42,6 +42,14 @@ body {
 	cursor: pointer;
 }
 
+#chromeStoreLink {
+	background-image: url(chromestore.png);
+	width: 206px;
+	height: 58px;
+	display: inline-block;
+	cursor: pointer;
+}
+
 .btn {
 	width: 100%;
 }
