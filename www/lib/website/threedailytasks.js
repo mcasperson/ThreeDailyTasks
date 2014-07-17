@@ -58,6 +58,7 @@ jQuery(refreshDisplay(getToday()));
  */
 jQuery(function() {
 	if (isChromeExtension()) {
+		jQuery("body").css("min-width", "450px");
 		jQuery(".container").hide();
 		window.setTimeout(function() {
 			jQuery(".container").show();
@@ -93,10 +94,10 @@ function linkEvents() {
 }
 
 function displayBottomLinks() {
-	if (!isPhoneGap() && !isChromeExtension()) {
+	if (!isPhoneGap()) {
 		jQuery("#bottomLinks").show();	
 		jQuery("#appLinks").show();
-	} else {
+	} else if (isChromeExtension()) {
 		jQuery("#chromeStoreLink").hide();
 	}
 }
