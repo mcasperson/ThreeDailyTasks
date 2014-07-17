@@ -31,6 +31,23 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	min-width: 450px;
+}
+
+#playStoreLink {
+	background-image: url(playstore.png);
+	width: 172px;
+	height: 60px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#chromeStoreLink {
+	background-image: url(chromestore.png);
+	width: 206px;
+	height: 58px;
+	display: inline-block;
+	cursor: pointer;
 }
 
 .btn {

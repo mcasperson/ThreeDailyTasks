@@ -59,7 +59,12 @@ C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\l
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\moment\moment.js \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\underscore\underscore-min.js \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\underscore\underscore-min.map \
+C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\chromestore.png \
+C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\chromestorelogo.png \
+C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\chromestorescreenshot.png \
+C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\cordova_utils.js \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\favicon.png \
+C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\google_analytics.js \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\opensans.woff \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\playstore.png \
 C:\Users\Matthew\workspace_jbds\ThreeLittleThings\platforms\android\assets\www\lib\website\style.css \

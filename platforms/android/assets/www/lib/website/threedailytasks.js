@@ -47,15 +47,57 @@ var TODAY_FORMAT = "DDMMYYYY";
 var REPORT_DAYS = 7;
 var MAX_TASK_LENGTH = 30;
 
+jQuery(linkEvents);
 jQuery(showWelcomeMessage);
 jQuery(displayBottomLinks);
 jQuery(updateDisplay);
 jQuery(refreshDisplay(getToday()));
 
+/*
+ * If we don't refresh the screen, the chrome extension will have an ugly scroll bar.
+ */
+jQuery(function() {
+	if (isChromeExtension()) {
+		jQuery(".container").hide();
+		window.setTimeout(function() {
+			jQuery(".container").show();
+		}, 0);
+	}
+});
+
+function linkEvents() {
+	jQuery("#task1").click(function(){toggleTask('task1');});
+	jQuery("#task2").click(function(){toggleTask('task2');});
+	jQuery("#task3").click(function(){toggleTask('task3');});
+	
+	jQuery("#task1edit").blur(function(){endEdit('task1');});
+	jQuery("#task2edit").blur(function(){endEdit('task2');});
+	jQuery("#task3edit").blur(function(){endEdit('task3');});
+	
+	jQuery("#task1edit").keypress(function(event){keypress(event, 'task1');});
+	jQuery("#task2edit").keypress(function(event){keypress(event, 'task2');});
+	jQuery("#task3edit").keypress(function(event){keypress(event, 'task3');});
+			
+	jQuery("#task1editstartbutton").click(function(){startEdit('task1');});
+	jQuery("#task2editstartbutton").click(function(){startEdit('task2');});
+	jQuery("#task3editstartbutton").click(function(){startEdit('task3');});
+	
+	jQuery("#task1editendbutton").click(function(){endEdit('task1');});
+	jQuery("#task2editendbutton").click(function(){endEdit('task2');});
+	jQuery("#task3editendbutton").click(function(){endEdit('task3');});
+	
+	jQuery("#twitterShare").click(function(){shareTwitter();});	
+	
+	jQuery("#playStoreLink").click(function() {window.open("https://play.google.com/store/apps/details?id=com.threedailythings");});
+	jQuery("#chromeStoreLink").click(function() {window.open("https://chrome.google.com/webstore/detail/three-daily-things/jecgjccbadfkhgggbhconpgmoanhgend");});
+}
+
 function displayBottomLinks() {
-	if (!isPhoneGap()) {
-		jQuery("#bottomLinks").show();
+	if (!isPhoneGap() && !isChromeExtension()) {
+		jQuery("#bottomLinks").show();	
 		jQuery("#appLinks").show();
+	} else {
+		jQuery("#chromeStoreLink").hide();
 	}
 }
 
