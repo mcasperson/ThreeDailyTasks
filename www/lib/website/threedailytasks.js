@@ -53,6 +53,18 @@ jQuery(displayBottomLinks);
 jQuery(updateDisplay);
 jQuery(refreshDisplay(getToday()));
 
+/*
+ * If we don't refresh the screen, the chrome extension will have an ugly scroll bar.
+ */
+jQuery(function() {
+	if (isChromeExtension()) {
+		jQuery(".container").hide();
+		window.setTimeout(function() {
+			jQuery(".container").show();
+		}, 0);
+	}
+});
+
 function linkEvents() {
 	jQuery("#task1").click(function(){toggleTask('task1');});
 	jQuery("#task2").click(function(){toggleTask('task2');});
@@ -65,8 +77,7 @@ function linkEvents() {
 	jQuery("#task1edit").keypress(function(event){keypress(event, 'task1');});
 	jQuery("#task2edit").keypress(function(event){keypress(event, 'task2');});
 	jQuery("#task3edit").keypress(function(event){keypress(event, 'task3');});
-	
-		
+			
 	jQuery("#task1editstartbutton").click(function(){startEdit('task1');});
 	jQuery("#task2editstartbutton").click(function(){startEdit('task2');});
 	jQuery("#task3editstartbutton").click(function(){startEdit('task3');});
@@ -82,7 +93,9 @@ function linkEvents() {
 
 function displayBottomLinks() {
 	if (!isPhoneGap()) {
-		jQuery("#bottomLinks").show();
+		if (!isChromeExtension()) {
+			jQuery("#bottomLinks").show();
+		}
 		jQuery("#appLinks").show();
 	}
 }
