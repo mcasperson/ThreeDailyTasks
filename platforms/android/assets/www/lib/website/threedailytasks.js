@@ -55,6 +55,7 @@ jQuery(refreshDisplay(getToday()));
 function displayBottomLinks() {
 	if (!isPhoneGap()) {
 		jQuery("#bottomLinks").show();
+		jQuery("#appLinks").show();
 	}
 }
 

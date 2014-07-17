@@ -59,10 +59,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='lib/website/style.css' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" type="image/png" href="lib/website/favicon.png"/>
-		
-		<script>
-			document.addEventListener("deviceready", hideBottomLinks, false);
-		</script>
 	</head>
 	<body>
 		<div class="container">
@@ -123,6 +119,11 @@
 				<div class="col-xs-3 text-center">
 					<h1><a href="#" onclick="javascript:shareTwitter()"><img width="32" height="26" src="lib/website/twitter.png"></a></h1>
 				</div>
+			</div>
+			<div id="appLinks" style="display:none" class="row voffset3 vboffset3 text-center">
+				<a href="https://play.google.com/store/apps/details?id=com.threedailythings">
+					<img src="lib/website/playstore.png"/>
+				</a>
 			</div>
 			<div id="bottomLinks" style="display:none" class="row voffset3 vboffset3 text-center">
 				<small class="bottom-links">
