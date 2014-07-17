@@ -89,7 +89,7 @@ function linkEvents() {
 	jQuery("#twitterShare").click(function(){shareTwitter();});	
 	
 	jQuery("#playStoreLink").click(function() {window.open("https://play.google.com/store/apps/details?id=com.threedailythings");});
-	jQuery("#chromeStoreLink").click(function() {window.open("https://chrome.google.com/webstore/detail/three-daily-things/jecgjccbadfkhgggbhconpgmoanhgend");
+	jQuery("#chromeStoreLink").click(function() {window.open("https://chrome.google.com/webstore/detail/three-daily-things/jecgjccbadfkhgggbhconpgmoanhgend");});
 }
 
 function displayBottomLinks() {
